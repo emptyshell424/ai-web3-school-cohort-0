@@ -1,10 +1,5 @@
 # 每日学习 — YYYY-MM-DD
 
-## TODO
-
-- [ ] 学习 Handbook
-- [ ]
-
 ## 日程
 
 时间 | 活动
@@ -36,4 +31,8 @@
 
 ## 打卡
 
-- [ ] WCB 提交
+**Day N** · YYYY.M.D
+**Plan**
+- 
+
+*Step by step.*
