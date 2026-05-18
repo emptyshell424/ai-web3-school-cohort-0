@@ -54,6 +54,37 @@ local_time = utc_time.astimezone(local_tz)
 - 口头回答中的时间
 - 任何发给用户的时间信息
 
+## 📤 分享给同学
+
+可直接复制以下内容到群聊/私聊：
+
+---
+
+### 一句话版
+
+> WCB API 返回的时间都是 UTC。告诉你的 Agent：「去 users.getProfile 拿我的 timezone，自动转换到本地时间。」
+
+### Hermes 一键安装版
+
+> **⏰ WCB 时间不对？装个 skill 就搞定**
+>
+> 终端运行：
+> ```bash
+> hermes skills install https://raw.githubusercontent.com/emptyshell424/ai-web3-school-cohort-0/main/skills/SKILL.md
+> ```
+>
+> 装完告诉 Agent：「以后处理 WCB 时间时，自动加载 wcb-timezone skill。」
+>
+> 之后所有时间自动适配你的时区。北京、纽约、伦敦、东京…都能用 🌍
+
+### 非 Hermes 用户版
+
+> 在 Agent 的 prompt 或 system message 里加上：
+>
+> > WCB 返回的时间是 UTC。先调 `users.getProfile` 获取用户 timezone，把所有 UTC 时间转换到用户本地时区再展示。不写死偏移量，动态读取。
+
+---
+
 ## 校验步骤（每次必做）
 
 1. 这个时间从哪来的？WCB API 还是手动写的？
