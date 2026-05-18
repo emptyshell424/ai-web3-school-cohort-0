@@ -23,8 +23,13 @@ users.getProfile → timezone 字段（如 "Asia/Shanghai"）
 ### 第一步：获取用户时区
 
 ```python
-import subprocess, json, pytz
+import subprocess, json, pytz, os
 from datetime import datetime
+
+# 从环境变量读取 WCB API Key（不要写死在代码里）
+api_key = os.environ.get('WCB_API_KEY')
+if not api_key:
+    raise ValueError("请先设置环境变量 WCB_API_KEY")
 
 # 调 WCB API 获取用户 profile
 result = subprocess.run([
